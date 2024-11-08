@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    
+
+  <div id="base">
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" id="planta" viewBox="0 0 850 712">
+      <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License 
+                - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+      <path id="pt" fill="currentColor"
+        d="M64 95.1H0c0 123.8 100.3 224 224 224v128C224 465.6 238.4 480 255.1 480S288 465.6 288 448V320C288 196.3 187.7 95.1 64 95.1zM448 32c-84.25 0-157.4 46.5-195.8 115.3c27.75 30.12 48.25 66.88 59 107.5C424 243.1 512 147.9 512 32H448z" />
+    </svg>
+    </svg>
+  </div>
+
+  <div class="botones">
+    <h2>Presiona un botón para cambiar un color</h2>
+    <button class="btn success"  onclick="cambiarColor('verde')">Verde</button>
+    <button class="btn info" onclick="cambiarColor('azul')">Azul</button>
+    <button class="btn warning" onclick="cambiarColor('amarillo')">Amarillo</button>
+    <button class="btn danger" onclick="cambiarColor('rojo')">Rojo</button>
+
+
+  </div>
+  <div class="botones">
+    <h2>Presiona un botón para cambiar el trazo de la imagen</h2>
+    <button class="btn secondary" onclick="trazo('10')">10 px</button>
+    <button class="btn secondary" onclick="trazo('20')">20 px</button>
+    <button class="btn secondary" onclick="trazo('30')">30 px</button>
+    <button class="btn secondary" onclick="trazo('40')">40 px</button>
+
+
+    <button class="btn success" onclick="invertir('verde')">Verde</button>
+    <button class="btn info" onclick="invertir('azul')">Azul</button>
+    <button class="btn warning" onclick="invertir('amarillo')">Amarillo</button>
+    <button class="btn danger" onclick="invertir('rojo')">rojo</button>
+
+
+  </div>
+
+
+
+<script src="assets/js/script.js"></script>
+
+
+
+</body>
+
+
+</html>

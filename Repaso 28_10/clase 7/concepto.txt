@@ -1,0 +1,53 @@
+async function obtenerDatos() {
+  try {
+    let respuesta = await fetch('https://api.example.com/data');
+    let datos = await respuesta.json();
+    console.log(datos);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+
+Promesas 
+
+Pendiente (pending)  - La promesa no ha sido resuelta o rechazada. Aun la operacion asincronica no ha finalizado
+
+Cumplida (fullfilled) -- completo con exito => devuelve un valor
+Rechazada (rejected) -- la operacion asincronica fallo => devuelve un error codigo (400)
+
+
+//Promesa Nativa
+let promesa = new Promise((resolve, reject) => {
+  // operación asíncrona
+  if (/* operación exitosa */) {
+    resolve("Operación exitosa");
+  } else {
+    reject("Error en la operación");
+  }
+});
+
+// promise.resolve
+let promesaResuelta = Promise.resolve("Resultado inmediato");
+
+//promise.reject
+let promesaRechazada = Promise.reject("Error inmediato");
+
+Promesas de Composición
+Promise.all
+
+Promise.all([promesa1, promesa2, promesa3])
+  .then(resultados => console.log(resultados))
+  .catch(error => console.error(error));
+
+Promise.race
+
+Promise.race([promesa1, promesa2, promesa3])
+  .then(resultado => console.log("Ganadora:", resultado))
+  .catch(error => console.error("Rechazada:", error));
+
+Promise.allSettled
+Promise.allSettled([promesa1, promesa2, promesa3])
+.then(resultados => console.log("Resuletas todas",resultados))
+.catch(error => console.error("Fallaron todas", error));
+

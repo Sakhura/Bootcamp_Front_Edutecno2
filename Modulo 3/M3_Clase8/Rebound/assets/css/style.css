@@ -1,0 +1,147 @@
+/* @keyframes desplazarg {
+
+
+
+
+    50% {
+        margin-top: 500px
+    }
+
+    75% {
+        margin-left: 500px
+    }
+
+    100% {
+        margin-top: 300px
+    }
+}
+
+@keyframes desplazarp {
+
+    50% {
+        margin-top: 50px
+    }
+
+    75% {
+        margin-left: 50px
+    }
+
+    100% {
+        margin-top: 50px
+    }
+}
+
+#gato {
+    width: 300px;
+    height: 300px;
+    animation: desplazarg 10s infinite;
+}
+
+.container {
+    margin: 750px;
+
+}
+
+#perro {
+    width: 300px;
+    height: 300px;
+    padding-left: 200px;
+    animation: desplazarp 5s infinite;
+
+} */
+
+
+
+
+
+
+
+
+
+@keyframes myfirst {
+    0% {
+       
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+       
+        left: 400px;
+        top: 0px;
+    }
+
+    50% {
+    
+        left: 400px;
+        top: 400px;
+    }
+
+    75% {
+       
+        left: 0px;
+        top: 400px;
+    }
+
+    100% {
+   
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes mySecond {
+    0% {
+       
+        left: 5px;
+        top: 5px;
+    }
+
+    25% {
+       
+        left: 500px;
+        top: 5px;
+    }
+
+    50% {
+    
+        left: 500px;
+        top: 500px;
+    }
+
+    75% {
+       
+        left: 5px;
+        top: 500px;
+    }
+
+    100% {
+   
+        left: 10px;
+        top: 10px;
+    }
+}
+
+
+
+
+#gato {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    animation: myfirst 10s 3;
+    animation-direction: alternate;
+
+}
+#perro {
+    width: 500px;
+    height: 500px;
+    margin-left: 200px;
+    position: relative;
+    animation: mySecond 10s 3;
+    animation-direction: alternate;
+    /* 
+   
+    */
+
+}

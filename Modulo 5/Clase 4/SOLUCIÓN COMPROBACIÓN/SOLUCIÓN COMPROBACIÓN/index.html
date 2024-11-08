@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContacTodos</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <form action="">
+                <h3>Guardar Nuevo Contacto</h3>
+                <p>Llena los siguientes campos para guardar un nuevo contacto.
+                </p>
+                <label class="form-group">
+                    <input id="nombre" type="text" class="form-control" required>
+                    <span>Nombre</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <input id="apellido" type="text" class="form-control" required>
+                    <span>Apellido</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <input id="telefono" type="tel" class="form-control" required>
+                    <span for="">Telefono</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <input id="correo" type="email" class="form-control" required>
+                    <span for="">Correo</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <textarea id="nota" class="form-control" required></textarea>
+                    <span for="">Nota</span>
+                    <span class="border"></span>
+                </label>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Guardar
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Contacto Guardado</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="here">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-bs-dismiss="modal">LLamar</button>
+                                <button type="button" data-bs-dismiss="modal">Enviar Correo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!-- JS script -->
+<script src="script.js"></script>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+</html>

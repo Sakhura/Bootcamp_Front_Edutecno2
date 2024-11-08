@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.container {
+    text-align: center;
+}
+
+#fetchDogButton{
+    padding: 10px 20 px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#fetchDogButton:hover{
+    background-color: #0056b3;
+}
+
+#dogImageContainer{
+    margin-top: 20px;
+}
+
+#dogImage{
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

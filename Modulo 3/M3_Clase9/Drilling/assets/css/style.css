@@ -1,0 +1,40 @@
+.navbar {
+    background-color: rgb(94, 94, 219);
+}
+
+.navbar-brand,
+.nav-link {
+    color: white;
+}
+
+img {
+    max-height: 200px;
+ 
+    margin: auto;
+    text-align: center;
+
+}
+.card{
+    margin-bottom: 10px;
+}
+.container{
+    margin-bottom: 70px;
+}
+
+.titulo {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(94, 94, 219);
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+
+}

@@ -1,0 +1,76 @@
+COMPONENTES
+
+Template: Define la estructura del HTML que se muestra. //linea 3 a 7
+
+<template>
+    <div>
+        <p> {{ mensaje}} </p>
+    </div>
+</template>
+
+
+Script: Contiene la logica de JS, como propiedades y metodos.// linea 12 a 21
+
+<script>
+    export default {
+        name: 'miComponente',
+        data() {
+            return {
+                mensaje: 'Hola soy un componente de Vue.js'
+            };
+        }
+    };
+</script>
+
+Styke : Define estilos que aplican para el componente //linea 22 a 23
+
+<style scoped>
+    p{
+        color: blue;
+    }
+</style>
+
+
+PROPERTIES
+
+componente Padre
+<template>
+    <div>
+        <Micomponente mensaje: `Mensaje viene desde el componente Padre`/>
+    </div>
+</template>
+
+<script>
+    import MiComponente from './MiComponente.vue';
+
+    export default {
+        components: {
+            MiComponente
+        }
+    };
+</script>
+
+Componente Hijo
+<template>
+    <div>
+        <p>{{ mensaje }}</p>
+    </div>
+</template>
+
+<script>
+    export default {
+        props: ['mensaje']
+    };
+</script>
+
+VALIDACION DE props
+
+export default {
+    props: {
+        mensaje: {
+            type: String,
+            required: true
+            default: 'Mensaje por defecto'
+        }
+    }
+};

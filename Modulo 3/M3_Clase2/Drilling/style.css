@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+.nav {
+  background: #a3dcee;
+  padding: 25px;
+}
+
+.nav__item {
+  color: #b53876;
+  font-size: 18px;
+  margin: 20px;
+}
+
+.nav__item--negrita {
+  color: #b53876;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.letras {
+  font-size: 22px;
+  color: #8107b1;
+  margin: 25px;
+}
+
+.letras-contacto {
+  font-size: 22px;
+  color: #8107b1;
+  margin: 25px;
+  text-align: center;
+}
+
+.row,
+.row > .column {
+  padding: 10px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 20%;
+}
+
+.column_destinos {
+  float: left;
+  width: 365px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.boton {
+  background-color: #faa05a;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: justify;
+  font-family: Verdana;
+  color: #580779;
+}
+
+.card p {
+  margin: 20px;
+}
+
+.price {
+  color: rgb(213, 16, 210);
+  font-size: 22px;
+}
+
+.botones {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #004173;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.botones:hover {
+  opacity: 0.7;
+}
+
+input[type=text],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bc0f71;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f54e07;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #dc804a;
+}
+
+.container {
+  border-radius: 5px;
+  margin: 20px 20px 85px 20px;
+  padding: 10px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: #a3dcee;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer__elemnto {
+  font-weight: bolder;
+  text-align: center;
+  color: #bc0f71;
+  margin: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="calculator card">
+
+        <input type="text" class="calculator-screen z-depth-1" value="" placeholder="0" disabled id="screen"/>
+
+        <div class="calculator-keys">
+
+            <button type="button" class="operator btn btn-info" value="+" onclick="getValue(value)" id="+">+</button>
+            <button type="button" class="operator btn btn-info" value="-" onclick="getValue(value)" id="-">-</button>
+            <button type="button" class="operator btn btn-info" value="*" onclick="getValue(value)" id="*">*</button>
+            <button type="button" class="operator btn btn-info" value="/" onclick="getValue(value)" id="/">/</button>
+
+            <button type="button" value="7" id="7" class="btn btn-light" onclick="getValue(value)">7</button>
+            <button type="button" value="8" id="8" class="btn btn-light" onclick="getValue(value)">8</button>
+            <button type="button" value="9" id="9" class="btn btn-light" onclick="getValue(value)">9</button>
+
+
+            <button type="button" value="4" id="4" class="btn btn-light" onclick="getValue(value)">4</button>
+            <button type="button" value="5" id="5" class="btn btn-light" onclick="getValue(value)">5</button>
+            <button type="button" value="6" id="6" class="btn btn-light" onclick="getValue(value)">6</button>
+
+
+            <button type="button" value="1" id="1" class="btn btn-light" onclick="getValue(value)">1</button>
+            <button type="button" value="2" id="2" class="btn btn-light" onclick="getValue(value)">2</button>
+            <button type="button" value="3" id="3" class="btn btn-light" onclick="getValue(value)">3</button>
+
+
+            <button type="button" value="0" class="btn btn-light" onclick="getZero()">0</button>
+            <button type="button" class="decimal function btn btn-secondary" value="." onclick="addDecimal()">.</button>
+            <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="clearScreen()">AC</button>
+
+            <button type="button" class="equal-sign operator btn btn-light" value="=" onclick="solve()">=</button>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: black;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    background-color: white;
+}
+
+.titulo:hover {
+    transform: rotate(-50deg);
+    color: #56fa04;
+    font-size: 80px;
+    transition-duration: 3s;
+
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.subtitulo:hover {
+    animation-duration: 3s;
+    animation-name: slidein;
+    color: #fa0487;
+    font-size: 30px;
+
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    transition-timing-function: ease-in-out .2s;
+}
+
+input[type=text]:hover {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #38e60d;
+    transform: scale(2);
+}
+
+input[type=password]:hover {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #fa0404;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: black;
+    outline: none;
+}
+
+
+/* Overwrite default styles of hr */
+hr {
+    border: 3px solid #fd04d4;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+    transform: translateX(500px);
+    transition-duration: 2 s;
+    background-color: #2904fa;
+    width: 80%;
+
+}

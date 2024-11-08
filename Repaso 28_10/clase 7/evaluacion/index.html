@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Animaciones con Velocity JS</title>
+</head>
+
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="yes" class="alert alert-success" role="alert"></div>
+        <div id="no" class="alert alert-danger" role="alert"></div>
+
+
+        <div id="formContent">
+
+            <!-- Login Form -->
+            <form>
+                <input type="text" id="mensaje" class="fadeIn second" name="login" placeholder="mensaje">
+                <input type="text" id="destinatario" class="fadeIn third" name="login" placeholder="destinatario">
+                <input type="button" class="fadeIn fourth" value="Enviar">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">terminos y condiciones</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="script2.js"></script>
+</body>
+
+</html>

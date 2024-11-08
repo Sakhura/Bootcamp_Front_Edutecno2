@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Patagonia Travels</title>
+</head>
+
+<body>
+     
+    <!-- Inicio Nav -->
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Patagonia Travel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                     </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Nav -->
+
+    <!-- Selectors Start -->
+    <div class="container opciones">
+        <h3>¿Qué actividad le gustaría hacer?</h3>
+        <label for="selector">Actividades: </label>
+        <select id="selector" onchange="cambiar(value)">
+            <option value="Trekking">Trekking</option>
+            <option value="Natación">Natación</option>
+            <option value="Ferry">Ferry</option>
+        </select>
+    </div>
+    <!-- Selectors End -->
+
+    <div class="container parte-central">
+        <div class="row">
+            <!-- Start -->
+            <div class="col-md-4">
+                <div class="content"> <a href="#">
+                        <div class="content-overlay"></div> 
+                        <img id="image" class="content-image" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1557246503/3_zoom_1.jpg">
+                        <div class="content-details fadeIn-bottom">
+                            <!-- Activity -->
+                            <h3 class="content-title" id="activity">Trekking</h3>
+                            
+                            <!-- Location -->
+                            
+                            <p class="content-text" id="location"> <i class="fa fa-map-marker"></i> Volcán Villarrica</p>
+                        </div>
+                    </a> 
+                </div>
+                <!-- Additional text -->
+                <div class="d-flex justify-content-center mt-5" id="description">
+                    <div class="card p-3 cookie">
+                        <span id="addInfo">"Modalidad de excursionismo que consiste en recorrer a pie largas distancias o zonas determinadas, generalmente de alta montaña y poco frecuentadas por el turismo convencional."<br></span>
+                        <a href="#">Conocer más</i></a>
+                        <div class="mt-4 text-right">
+                                                        
+                            <button class="btn btn-light btn-sm" type="button">Agendar actividad</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional text -->
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

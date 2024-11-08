@@ -1,0 +1,78 @@
+body {
+  font-size: 18px;
+  font-weight: 400
+}
+
+.p-y-2 {
+  padding-top: 28px;
+  padding-bottom: 28px
+}
+
+.p-y-3 {
+  padding-top: 45px;
+  padding-bottom: 45px
+}
+
+.m-b-1 {
+  margin-bottom: 18px
+}
+
+.m-t-1 {
+  margin-top: 18px
+}
+
+.main_counter_area {
+  background-size: cover;
+  overflow: hidden
+}
+
+.main_counter_area .main_counter_content .single_counter {
+  background: #000000;
+  color: #fff
+}
+
+.main_counter_area .main_counter_content .single_counter i {
+  font-size: 36px
+}
+
+#cover {
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#cover-caption {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* only used for background overlay not needed for centering */
+
+form:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+input {
+  width: 5em;
+  margin-bottom: 5%;
+}
+
+.statistic-counter {
+  font-size: 10em;
+}
+
+#seconds {
+  width: 14.5em;
+}

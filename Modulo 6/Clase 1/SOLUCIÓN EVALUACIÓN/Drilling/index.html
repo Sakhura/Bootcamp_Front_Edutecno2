@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="content" style="text-align: center;">Curriculum Vitae {{nombre}} {{apellidos}} </h1>
+        <div class="timeline">
+            <div class="container right">
+                <div class="content">
+                    <h1></h1>
+                    <img  :src="foto" alt="Avatar" style="width:300px; text-align: center;">
+                    <h3>Correo</h3>
+                        <p> {{correo}} </p>
+                    <hr class="solid">
+                    <h3>Dirección</h3>
+                        <p> {{direccion}} </p>
+                    <hr class="solid">
+                    <h3>Teléfono</h3>
+                        <p> {{telefono}} </p>
+                    <hr class="solid">                 
+                </div>
+            </div>
+            <div class="container left" style="background-color: rgb(236, 194, 146);">
+                <div class="content">
+                    <h1>Experiencia Educacional</h1>
+
+                </div>
+
+            </div>
+            <div v-for="edu of educacion">
+                <div class="container left">
+                    <div class="content">
+                        <h2>{{edu.institucion}} </h2>
+                        <h3>{{edu.anio}} </h3>
+                        <p> {{edu.descripcion}} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <div class="main_counter_area">
+        <section id="cover" class="min-vh-100">
+            <div id="cover-caption">
+                <div class="container-fluid">
+                    <div class="row text-white">
+                        <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                            <!-- <h1 class="display-4 py-2 text-truncate">00</h1> -->
+                            <div class="overlay p-y-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="main_counter_content text-center white-text wow fadeInUp">
+                                            <div class="col-md-12">
+                                                <div class="single_counter p-y-2 m-t-1"> <i class="fa fa-briefcase m-b-1"></i>
+                                                    <h2 class="statistic-counter" id="here">00</h2> <span></span>
+                                                    <p>segundos</p>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <form action="" class="justify-content-center">
+                                    <div class="form-group">
+                                        <label class="sr-only">Ingresar segundos</label>
+                                    <center> <input id="seconds" type="number"  class="form-control" placeholder="00" min="00"  ></center>
+                                    </div>
+                                    <button type="button" class="btn btn-success btn-lg">Empezar</button>
+                                    <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+
+
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+        <!-- JS -->
+        <script src="scripts.js"></script>
+</body>
+</html>

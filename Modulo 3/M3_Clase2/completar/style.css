@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+  background: #4f3da8;
+  padding: 25px;
+}
+
+.nav__item {
+  color: #f5a364;
+  font-size: 18px-large;
+  margin: 20px;
+}
+
+.nav__item-r {
+  float: right;
+  color: #f5a364;
+  font-size: 18px-large;
+}
+
+.nav__item--negrita {
+  color: #f5a364;
+  font-weight: bold;
+  font-size: 20px-x-large;
+}
+
+.letras {
+  font-size: 22px;
+  color: #DEA350;
+  margin: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 38px;
+  text-align: center;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+}
+
+.column_novedades {
+  float: left;
+  width: 200px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+.boton {
+  background-color: #faa05a;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #4f3da8;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.footer__elemnto1 {
+  float: left;
+  font-weight: bolder;
+  color: #f5a364;
+  margin-top: 10px;
+}
+
+.footer__elemnto2 {
+  float: right;
+  width: 25px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav {
+    background: #150e77;
+    padding: 25px;
+    text-align: center;
+}
+
+.nav__item--titulo {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+
+
+}
+
+.fecha {
+    background-color: white;
+    color: black;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+.container {
+    position: relative;
+    margin: 10px;
+
+}
+
+.titulo_principal {
+    color: rgb(248, 187, 5);
+    -webkit-text-stroke: 2px black;
+    font-size: 60px;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 18px;
+}
+.pagina-titulo{
+    float:right;
+    background:rgb(69, 69, 69);
+    color: white;
+    position: absolute;
+    top: 484px;
+    left: 1000px;
+    padding: 15px;
+
+}
+
+.imagenPrincipal {
+    width: 100%;
+}
+
+.noticias p{
+    margin: 10px;
+    text-align: left;
+    font-size: 25px;
+
+}
+.noticias h2{
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.pagina{
+    float:right;
+    background:rgb(69, 69, 69);
+    position: absolute;
+    top: 126px;
+    left: 286px;
+    padding: 15px;
+
+   
+}
+
+.noticia1 {
+    background: red;
+    color: white;
+    width: 365px;
+    height: 200px;
+    position: absolute;
+    top: 644px;
+    left: 0px;
+}
+
+.noticia2 {
+    background: red;
+    color: white;
+    width: 365px;
+    height: 200px;
+    position: absolute;
+    top: 644px;
+    left: 366px;
+
+
+}
+
+.noticia3 {
+    background: red;
+    color: white;
+    width: 365px;
+    height: 200px;
+    position: absolute;
+    top: 644px;
+    left: 732px;
+
+
+}
+
+.noticia4 {
+    background: red;
+    color: white;
+    width: 365px;
+    height: 200px;
+    position: absolute;
+    top: 644px;
+    left: 1098px;
+
+}
+
+/* .nav__item {
+    color: #f5a364;
+    font-size: 18px-large;
+    margin: 20px;
+
+}
+.nav__item-r {
+    float: right;
+    color: #f5a364;
+    font-size: 18px-large;  
+
+} */
