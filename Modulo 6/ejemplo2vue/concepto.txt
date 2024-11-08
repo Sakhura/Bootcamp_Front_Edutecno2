@@ -7,10 +7,10 @@ veremos otra forma de utilizar VUE
 
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    con CDN nos ahorramos la vuelta larga
+    con CDN nos ahorramos la vuelta larga XD
 
 2.- crear un archivo llamado "index.html" dentro de la carpeta "ejemplo2vue"
-3.- crear un archivo llamado "main.js" dentro de la carpeta "ejemplo2vue"
+
 
 
 
