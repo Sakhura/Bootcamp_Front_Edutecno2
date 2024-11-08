@@ -1,0 +1,16 @@
+veremos otra forma de utilizar VUE
+
+1.- crear una carpeta con nombre a eleccion  "ejemplo2vue"
+    1.1- ir a la pagina  https://vuejs.org/
+    1.2- ir a https://vuejs.org/guide/quick-start.html  = buscar Using Vue from CDN
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    con CDN nos ahorramos la vuelta larga
+
+2.- crear un archivo llamado "index.html" dentro de la carpeta "ejemplo2vue"
+3.- crear un archivo llamado "main.js" dentro de la carpeta "ejemplo2vue"
+
+
+
