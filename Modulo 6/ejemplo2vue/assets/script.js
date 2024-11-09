@@ -1,7 +1,7 @@
 const app = new Vue({
     el: "#app",
     data: {
-        nombre: "PEdro",
+        nombre: "Pedro",
         apellidos: "El escamoso",
         direccion: "El canelo 845",
         telefono: "123456789",
