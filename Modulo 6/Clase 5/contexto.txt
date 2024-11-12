@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <h1>Calculadora de Edad</h1>
+    <p>Ingresa tu edad en años:</p>
+    <input v-model="edadEnAnios" type="number" placeholder="Tus años">
+    <p>Tu edad en meses es: {{ edadEnMeses }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      edadEnAnios: 0 // Inicializa la edad en años en 0
+    };
+  },
+  computed: {
+    edadEnMeses() {
+      return this.edadEnAnios * 12; // Calcula la edad en meses
+    }
+  }
+}
+</script>
+
+Explicación:
+Edad en años: El usuario ingresa su edad en años en un cuadro de texto 
+(por ejemplo, si tiene 10 años, escribe "10").
+Edad en meses: La propiedad computada edadEnMeses calcula automáticamente 
+la edad en meses multiplicando los años por 12 (porque hay 12 meses en un año).
+Por ejemplo, si escribes "10" en el cuadro de texto, la aplicación automáticamente 
+mostrará "Tu edad en meses es: 120", porque 10 años multiplicado por 12 es igual 
+a 120 meses.
+
