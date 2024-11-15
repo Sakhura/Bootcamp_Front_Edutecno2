@@ -1,0 +1,60 @@
+<template>
+    <div>
+        <button @click= "show = !show">Mostrar / Ocultar</button>
+        <transtition name="fode">
+            <p v-if="show">
+            Aca se muestra y oculta con una transcicion (desvanecimiento) 
+            </p>
+        </transtition>
+    </div>
+</template>
+
+<script>
+export default {
+data(){
+    return {
+        show: true
+    }
+}
+}
+</script>
+
+
+<style>
+    .fode-enter-active,
+    .fode-leave-active {
+        transition: opacity 0.5s;
+    }
+    .fode-enter, .fode-leave-to /* .fode-leave-active
+    en Vue2.x */{
+        opacity: 0;
+    }
+</style>
+
+***************************************************************
+
+HTML
+<img src="imagen.jpg" alt="Desc imagen" loading="lazy">
+
+****************************************************************
+Hacer sintaxis en vue se realizan en el .js
+
+import { createRouter, createWebHistory } from 'vue-router'
+
+const router = createRouter ({
+    history: createWebHistory (import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: () => import ('./views/Home.vue'),
+        },
+        {
+            path: '/about',
+            name: 'about',
+            component: () => import ('./views/About.vue'),
+        }
+    ]
+})
+
+export default router

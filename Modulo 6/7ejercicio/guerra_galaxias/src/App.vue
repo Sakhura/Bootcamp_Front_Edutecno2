@@ -43,4 +43,20 @@
   height: 100%;
   position: absolute;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 </style>
+
+<script>
+  export default {
+        data() {
+    return {
+      imageUrl: 'https://brandemia.org/contenido/subidas/2021/05/portada-starwars-imagenes-brandemia-blog-1000x670.jpg'
+    };
+  }
+}
+</script>
