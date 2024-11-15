@@ -1,0 +1,18 @@
+sintaxis de rutas dinamicas
+
+import { createRouter, createWebHistory } from 'vue-router'
+
+const routes = [
+    {
+        path: '/personajes/:id',  // la ruta dinamica
+        name: 'personaje', // nombre de la ruta
+        component: () => import('@/views/Personajes.vue'),
+    }
+]
+
+const router = createRouter({
+    history: createWebHistory(process.env.BASE_URL),
+    routes
+}) 
+
+export default router
