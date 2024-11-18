@@ -1,6 +1,6 @@
 <template>
   <div class="general">
-         <ul class="nav" style="background-color: yellow;">
+        <ul class="nav" style="background-color: yellow;">
       <li class="nav-item">
         <router-link to="/home" class="nav-link">Inicio</router-link>
       </li>
