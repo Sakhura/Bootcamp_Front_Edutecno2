@@ -17,9 +17,9 @@
                 
               </li>
              
-              <!-- <li class="nav-item">
+              <li class="nav-item">
                 <router-link class="nav-link" aria-current="page"  to="/administracion"><i class="fas fa-users-cog"></i> Administración</router-link> 
-              </li> -->
+              </li> 
             </ul>
           </div>
   
